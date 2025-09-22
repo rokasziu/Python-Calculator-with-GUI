@@ -129,7 +129,7 @@ if __name__ == "__main__":
 
     # entry field 
     entry_field = tk.Entry(window, textvariable=equation, font=("Arial", 30), bd=3, insertwidth=2, width=16,
-                           borderwidth=0, relief="raised", justify="right", bg="#505B6E", fg="white")
+                           borderwidth=4, relief="raised", justify="right", bg="#505B6E", fg="white")
     entry_field.grid(row=0, column=0, columnspan=4, pady=10, sticky="nsew")
     window.grid_columnconfigure(0, weight=1)
     window.grid_columnconfigure(1, weight=1)
@@ -177,6 +177,7 @@ if __name__ == "__main__":
         btn.grid(row=row, column=col, padx=3, pady=3, sticky="nsew")
     
     window.mainloop()
+
 
 
 
